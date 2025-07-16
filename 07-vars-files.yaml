@@ -1,7 +1,7 @@
 - name: Variables from files
   host: local
   connection: local
-  vars_files
+  vars_files:
   - cource.yaml
   tasks:
   - name: print cource information
