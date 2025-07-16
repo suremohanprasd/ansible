@@ -9,4 +9,4 @@
   - name: print cource information
     ansible.builtin.debug:
     # vars refers should be surrounded by ""
-      msg: "Hello, {{ COURCE }}, Cource Duration: {{ DURATION }}, Trainer is {{ SIVA }} "
+      msg: "Hello, {{ COURCE }}, Cource Duration: {{ DURATION }}, Trainer is {{ TRAINER }} "
