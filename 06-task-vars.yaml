@@ -8,7 +8,7 @@
   tasks:
   - name: print cource information
     vars:
-    COURCE: Ansible
+      COURCE: Ansible
     ansible.builtin.debug:
     # vars refers should be surrounded by ""
       msg: "Hello, {{ COURCE }}, Cource Duration: {{ DURATION }}, Trainer is {{ TRAINER }} "
