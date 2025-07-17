@@ -10,6 +10,6 @@
     when: NUMBER < 100
 
 - name: print if the number is less than or equal to 100
-    ansible.builtin.debug:
-      msg: "Give number {{ NUMBER }} is greater than 100"
-    when: NUMBER > 100
+  ansible.builtin.debug:
+    msg: "Give number {{ NUMBER }} is greater than 100"
+  when: NUMBER > 100
