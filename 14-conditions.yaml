@@ -1,5 +1,5 @@
 - name: condtions demo
-  host: local
+  hosts: local
   connection: local
   vars:
     NUMBER: 70
