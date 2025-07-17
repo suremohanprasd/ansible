@@ -3,7 +3,7 @@
   connection: local
   vars:
     NUMBER: 70
-  task:
+  tasks:
   - name: print if the number is less than or equal to 100
     ansible.builtin.debug:
       msg: "Give number {{ NUMBER }} is less than 100"
