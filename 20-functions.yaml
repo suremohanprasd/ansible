@@ -14,8 +14,9 @@
 
   - name: convert map into list
     vars:
-      name: ansible
-      duration: 10HRS
-      trainer: siva
+      cource:
+        name: ansible
+        duration: 10HRS
+        trainer: siva
     ansible.builtin.debug:
       msg: "Cource Info: {{ cource | dict2items }}"
