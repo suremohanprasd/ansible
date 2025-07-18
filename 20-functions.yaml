@@ -20,3 +20,12 @@
         trainer: siva
     ansible.builtin.debug:
       msg: "Cource Info: {{ cource | dict2items }}"
+
+  - name: convert list into map
+    vars:
+      cource:
+      - {'key': 'name', 'value': 'ansible'}
+      - {'key': 'duration', 'value': '10HRS'}
+      - {'key': 'trainer', 'value': 'siva'}
+    ansible.builtin.debug:
+      msg: "Cource Info: {{ cource | items2dict }}"
