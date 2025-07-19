@@ -41,3 +41,9 @@
       name: "MOHAN PRasad"
     ansible.builtin.debug:
       msg: "Hello {{ name | lower}}"
+
+  - name: check IP address is valid or not  # max IP address range is 255.255.255.255
+    vars:
+      ip: "555.333.222.11"
+    ansible.builtin.debug:
+     msg: "{{ ip | ansible.utils.ipaddr }}"
